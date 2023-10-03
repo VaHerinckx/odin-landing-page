@@ -10,6 +10,8 @@ img {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -20,28 +22,106 @@ a {
   background-color: #1F2937;
 }
 
-.header-title {
-  font-size: 48px;
-  font-weight: 800;
-  color: #F9FAF8;
-}
-
 a, .header-title-desc {
   font-size: 18px;
   color: #E5E7EB;
 }
 
-.logo {
-  border: 1px dotted white;
-}
-
+/* Formatting all the blocks in the top of the header */
 .header-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
+  height: 100px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-self: flex-start;
+  flex-shrink: 0;
+  gap: 30px;
+  align-items: center;
+}
+
+.logo-img {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 0;
+  flex-grow:0;
+  height: 100px;
+  width: auto;
+}
+
+.logo-title {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: bold;
 }
 
 .header-links {
   display:flex;
-  gap: 8px;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.header-bottom {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-title-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header-title-group > * {
+  margin-bottom: 10px;
+
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+  width: 500px;
+}
+
+.header-title-desc {
+
+}
+
+.comp-picture {
+  max-width: 300px;
+  flex-grow:1;
+  border-radius: 25px;
+}
+
+.button-signup {
+  background-color:#3882F6;
+  border-color:#3882F6;
+  border-radius: 8px;
+  color: white;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.middle {
+  background-color: white;
+  color: #1F2937;
+  padding: 20px 0px 40px 0px;
+}
+
+.screenshots {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
