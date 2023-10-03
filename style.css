@@ -32,12 +32,12 @@ a, .header-title-desc {
   margin-bottom: 50px;
   height: 100px;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 10px;
 }
 
 .logo {
   display: flex;
-  justify-self: flex-start;
   flex-shrink: 0;
   gap: 30px;
   align-items: center;
@@ -88,10 +88,6 @@ a, .header-title-desc {
   font-weight: 800;
   color: #F9FAF8;
   width: 500px;
-}
-
-.header-title-desc {
-
 }
 
 .comp-picture {
@@ -151,6 +147,7 @@ a, .header-title-desc {
   flex-direction: column;
   background-color: #E5E7EB;;
   align-items: center;
+  padding: 50px;
 }
 
 .quote-text {
@@ -164,8 +161,43 @@ a, .header-title-desc {
   margin-bottom: 10px;
 }
 
-.quote-author {
+.quote-author, .CTA-title, .header-title-desc {
   font-size: 24px;
   font-weight: 800;
+}
+
+.quote-author {
   justify-self: flex-end;
+}
+
+.CTA {
+  margin: 30px auto 30px auto;
+  display: flex;
+  max-width: 800px;
+  height: 100px;
+  color: white;
+  background-color: #3882F6;
+  border-radius: 10px;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.CTA-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding: 10px;
+  border: 3px solid white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
 }
