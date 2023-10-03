@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header, .footer {
+  background-color: #1F2937;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+}
+
+a, .header-title-desc {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.logo {
+  border: 1px dotted white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links {
+  display:flex;
+  gap: 8px;
+}
