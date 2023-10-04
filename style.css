@@ -1,9 +1,7 @@
 body {
   margin: 0px;
-}
-img {
-  width: 200px;
-  height: auto;
+  font-family: Helvetica;
+  color: #E5E7EB;
 }
 
 ul {
@@ -20,20 +18,29 @@ a {
   background-color: #1F2937;
 }
 
+.middle, .quote-container {
+  background-color: white;
+}
+
+button, a {
+  color: white;
+}
+
 a, .header-title-desc {
   font-size: 18px;
-  color: #E5E7EB;
+  color: #E5E7EB
 }
 
 /* Formatting all the blocks in the top of the header */
 .header-top {
   display: flex;
-  align-items: center;
+  flex-wrap:wrap;
   margin-bottom: 50px;
+  padding: 10px 60px;
   height: 100px;
   gap: 10px;
-  justify-content: space-around;
-  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -54,7 +61,6 @@ a, .header-title-desc {
 
 .logo-title {
   font-size: 24px;
-  color: #F9FAF8;
   font-weight: bold;
 }
 
@@ -67,15 +73,15 @@ a, .header-title-desc {
 .header-bottom {
   display: flex;
   gap: 20px;
-  padding-bottom: 20px;
-  justify-content: space-around;
+  padding: 20px 60px;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header-title-group {
   display: flex;
+  flex-wrap:wrap;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .header-title-group > * {
@@ -86,13 +92,13 @@ a, .header-title-desc {
 .header-title {
   font-size: 48px;
   font-weight: 800;
-  color: #F9FAF8;
   width: 500px;
 }
 
 .comp-picture {
-  max-width: 300px;
+  max-width: 400px;
   flex-grow:1;
+  flex-shrink: 1;
   border-radius: 25px;
 }
 
@@ -100,8 +106,7 @@ a, .header-title-desc {
   background-color:#3882F6;
   border-color:#3882F6;
   border-radius: 8px;
-  color: white;
-  width: 100px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +114,6 @@ a, .header-title-desc {
 }
 
 .middle {
-  background-color: white;
   color: #1F2937;
   padding: 20px 0px 40px 0px;
 }
@@ -145,7 +149,7 @@ a, .header-title-desc {
 .quote-container {
   display: flex;
   flex-direction: column;
-  background-color: #E5E7EB;;
+  background-color: #E5E7EB;
   align-items: center;
   padding: 50px;
 }
@@ -156,6 +160,7 @@ a, .header-title-desc {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: #1F2937;
   max-width: 800px;
   text-align: center;
   margin-bottom: 10px;
@@ -168,6 +173,7 @@ a, .header-title-desc {
 
 .quote-author {
   justify-self: flex-end;
+  color: #1F2937;
 }
 
 .CTA {
@@ -175,7 +181,6 @@ a, .header-title-desc {
   display: flex;
   max-width: 800px;
   height: 100px;
-  color: white;
   background-color: #3882F6;
   border-radius: 10px;
   gap: 20px;
@@ -187,7 +192,6 @@ a, .header-title-desc {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   background-color: #3882F6;
   border-radius: 10px;
   padding: 10px;
@@ -198,6 +202,5 @@ a, .header-title-desc {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   padding: 20px;
 }
